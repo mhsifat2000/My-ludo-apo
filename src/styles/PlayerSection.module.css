@@ -1,0 +1,6 @@
+.container{
+     display:flex;
+     background: green;
+     flex-direction: column;
+     border-radius: 20px;
+}

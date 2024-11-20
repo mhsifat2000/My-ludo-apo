@@ -1,0 +1,17 @@
+.container{
+     display: grid;
+     grid-template-areas: 1fr 4fr 1fr;
+     background: #179289;
+     gap: 20px;
+     
+}
+.playerContainer{
+     display:flex; 
+     justify-content: space-between;
+     padding: 50px;
+}
+.playerContainer p{
+     color:wheat;
+     font-size: 2.2rem;
+     text-align: center;
+}

@@ -1,0 +1,30 @@
+.cell {
+    height: 50px;
+    width: 50px;
+    border: 1px solid #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.red {
+    background-color: red;
+}
+
+.green {
+    background-color: green;
+}
+
+.blue {
+    background-color: var(--blue);
+}
+
+.yellow {
+    background-color: var(--yellow);
+}
+
+.star {
+    font-size: 24px;
+    color: #fff;
+}

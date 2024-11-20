@@ -1,0 +1,33 @@
+.box {
+    height: 200px;
+    width: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle {
+    height: 50px;
+    width: 50px;
+    margin: 10px;
+    border-radius: 50%;
+    box-sizing: border-box;
+}
+
+/* Dynamic borders for each color */
+.border_red {
+    border: 5px solid red;
+}
+
+.border_green {
+    border: 5px solid green;
+}
+
+.border_blue {
+    border: 5px solid var(--blue);
+}
+
+.border_yellow {
+    border: 5px solid var(--yellow);
+}

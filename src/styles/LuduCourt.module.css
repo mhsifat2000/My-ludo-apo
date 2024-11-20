@@ -1,0 +1,183 @@
+:root{
+     --Yellow :#ffdc2b;
+     --Blue:#2bc0ff;
+}
+
+.court {
+  display: grid;
+  grid-template-rows: 1.5fr 1fr 1.5fr;
+  grid-template-columns: 1.5fr 1fr 1.5fr;
+  gap: 2px;
+  width: 700px;
+  height: 700px;
+  border: 2px solid black;
+  margin: auto;
+}
+
+/* Zones */
+.redZone {
+  background-color: red;
+  grid-row: 1;
+  grid-column: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.greenZone {
+  background-color: green;
+  grid-row: 1;
+  grid-column: 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.blueZone {
+  background-color: var(--Blue);
+  grid-row: 3;
+  grid-column: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.yellowZone {
+  background-color: var(--Yellow);
+  grid-row: 3;
+  grid-column: 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* gutiContainer */
+.gutiContainer{
+     height:70%;
+     width: 70%;
+     background: white;
+     display: grid;
+     grid-template-columns: 1fr 1fr;
+     gap: 20px;
+}
+.gutiCircle{ 
+     height: 60%;
+     width :60%;
+     border-radius: 50%;
+     position: relative;
+     margin: auto;
+     display: flex; 
+     justify-content: center;
+     align-items: center;
+}
+.gutiCircleRed{
+     border:  4px red solid;
+}
+.gutiCircleBlue{
+     border:  4px var(--Blue) solid;
+}
+.gutiCircleGreen{
+     border: 4px green solid;
+}
+.gutiCircleYellow{
+     border: 4px var(--Yellow) solid;
+}
+
+/* Ladders */
+.verticalLadder,
+.horizontalLadder {
+  display: grid;
+  gap: 2px;
+}
+
+.verticalLadder {
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column: 2;
+}
+
+.horizontalLadder {
+  
+  grid-template-rows:1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-row: 2;
+}
+
+/* Ladder cells */
+.cell {
+  width: 100%;
+  height: 100%;
+  border: 1px solid black;
+  position: relative;
+  background: white;
+}
+.star::after{
+     content: "";
+     clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+     background: black;
+     position: absolute;
+     top: 10%;
+     left: 10%;
+     width: 70%;
+     height: 70%;
+     
+}
+.redCell {
+  background-color: red;
+}
+
+.greenCell {
+  background-color: green;
+}
+
+.blueCell {
+  background-color: var(--Blue);;
+}
+
+.yellowCell {
+  background-color: var(--Yellow);
+}
+
+/* Home Area */
+.home {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    border: 2px black solid;
+    grid-row: 2;
+    grid-column: 2;
+}
+
+.triangleRed {
+       background: red;
+       clip-path: polygon(50% 50%, 0% 100%, 100% 100%);
+       width: 100%;
+       height: 100%;
+       position: absolute;
+       transform: rotate(90deg) translate(00%);
+}
+
+.triangleBlue {
+       width: 100%;
+       height: 100%;
+       position: absolute;
+       background: var(--Blue);;
+       clip-path: polygon(50% 50%, 0% 100%, 100% 100%);
+       
+}
+
+.triangleGreen {
+       width: 100%;
+       height: 100%;
+       position: absolute;
+       background: green;
+       clip-path: polygon(50% 50%, 0% 100%, 100% 100%);
+       transform: rotate(180deg) translate(0%);
+}
+
+.triangleYellow {
+       width: 100%;
+       height: 100%;
+       position: absolute;
+       background: var(--Yellow);
+       clip-path: polygon(50% 50%, 0% 100%, 100% 100%);
+       transform: rotate(-90deg) translate(0%);
+}
